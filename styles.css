@@ -1,0 +1,322 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* Mejora la legibilidad */
+    color: #333; /* Añadido para un color de texto predeterminado */
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Añadido para asegurar fondo blanco */
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease; /* Añadido para un efecto de transición suave */
+}
+.navbar-brand:hover {
+    color: #ff7300; /* Añadido para consistencia en hover */
+}
+.navbar-nav .nav-link {
+    color: #555;
+    transition: color 0.3s ease; /* Transición suave para enlaces */
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ff7300;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+    text-align: center; /* Centrado de texto para mejorar presentación */
+}
+.hero h1 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2.5rem; /* Tamaño de fuente ajustado para mayor impacto */
+}
+.hero p {
+    color: #666;
+    font-size: 1.1rem; /* Tamaño de fuente ajustado para mejor legibilidad */
+}
+
+/* Carousel */
+.carousel-item {
+    height: auto; /* Ajusta automáticamente la altura según el contenido */
+}
+
+/* Estilos Específicos */
+.carousel-item img {
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta si es necesario */
+    width: 100%; /* La imagen ocupará el 100% del contenedor del carrusel */
+    max-width: 100%; /* Ancho máximo de 100% */
+    max-height: 100%; /* Altura máxima de 100% */
+    height: auto; /* Mantiene la proporción de la imagen automáticamente */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo más oscuro para mayor legibilidad */
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra al texto para mejorar el contraste */
+}
+
+/* Estilo para imágenes de productos */
+.img-thumbnail {
+    width: 200px; /* Ancho fijo de 200px */
+    height: 200px; /* Altura fija de 200px */
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta si es necesario */
+    display: block; /* Asegura que la imagen sea un elemento de bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Productos Section */
+.productos .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px; /* Añadido para bordes redondeados */
+}
+.productos .card:hover {
+    transform: scale(1.05); /* Añade un ligero zoom al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efecto de sombra en hover */
+}
+.productos .card-title {
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+.productos .btn-product {
+    background-color: #ff7300;
+    color: white;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Añadido para bordes redondeados del botón */
+}
+.productos .btn-product:hover {
+    background-color: #e66800;
+}
+
+/* Contactos Section */
+.contactos .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Transición añadida para suavizar el efecto */
+    border-radius: 10px; /* Añadido para bordes redondeados */
+}
+.contactos .card:hover {
+    box-shadow: 0 8px 16px rgba(250, 92, 1, 0.575); /* Añadido efecto de sombra en hover */
+}
+.contactos .bi {
+    font-size: 3rem;
+    color: #ff6600;
+}
+
+/* Formulario de Contacto */
+.contacto-form {
+    background-color: #f8f9fa;
+    padding: 2rem; /* Añadido padding para mejorar la presentación */
+    border-radius: 8px; /* Añadido borde redondeado */
+}
+/* Estilos directos para el botón de enviar del formulario */
+input[type="submit"], button[type="submit"] {
+    background-color: #ff7300; /* Tu color deseado */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor al pasar el ratón */
+}
+input[type="submit"]:hover, button[type="submit"]:hover {
+    background-color: #e66800; /* Color al pasar el ratón */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff; /* Asegura que el texto del pie de página sea legible */
+    padding: 1.5rem 0; /* Añadido padding para mejor presentación */
+    text-align: center; /* Centra el contenido del pie de página */
+}
+footer a {
+    font-size: 1.5rem;
+    color: inherit; /* Hereda el color del pie de página para consistencia */
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: #ff6600 !important;
+}
+
+/* Botón personalizado */
+.btn-custom {
+    background-color: #ff7300;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Añadida transición de transformación */
+}
+.btn-custom:hover {
+    background-color: #e66800;
+    transform: scale(1.05); /* Añadido efecto de agrandamiento en hover */
+    color: white;
+}
+
+/* Botón WhatsApp */
+.btn-whatsapp {
+    background-color: transparent !important;/* Eliminación de fondo */
+    border: none !important;/* Elimina cualquier borde */
+    color: black !important;/* Color del texto  */
+    display: inline-flex;/* Asegura el centrado vertical del icono y texto*/
+    align-items: center;/* Asegura el centrado vertical del icono y texto */
+    justify-content: center;/* Centra el contenido horizontalmente */
+    padding: 10px;/* Espaciado interno */
+    border-radius: 5px;/* Redondea los bordes */
+}
+.btn-whatsapp:focus {
+    outline: none; /* Eliminar el contorno al hacer foco */
+    box-shadow: 0 8px 16px rgba(250, 92, 1, 0.575); /* Mantener la sombra */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 200px; /* Altura reducida para pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item {
+        height: 150px; /* Altura reducida aún más para pantallas pequeñas */
+    }
+}
+
+/* Efectos Interactivos */
+.carousel-item:hover img {
+    transform: scale(1.05); /* Pequeño zoom al pasar el ratón */
+    transition: transform 0.5s ease-in-out; /* Suaviza la transición del zoom */
+}
+
+/* Ajuste de altura para las imágenes en tarjetas */
+.card-img-top {
+    height: 120px; /* Reducido de 150px a 120px */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+}
+
+.hero h1 {
+    font-size: 2rem; /* Ajuste del tamaño de fuente en dispositivos pequeños */
+}
+
+.hero p {
+    font-size: 1rem; /* Ajuste del tamaño de fuente en dispositivos pequeños */
+}
+
+.navbar-nav {
+     text-align: center; /* Ajusta la alineación de la navegación en pantallas pequeñas */
+}
+
+.navbar-nav .nav-link {
+    display: block; /* Hace que los enlaces de la navegación se muestren en bloque */
+    margin: 0.5rem 0; /* Añade margen entre los enlaces en dispositivos pequeños */
+}
+/* Estilos generales para el cuerpo */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Estilos para las tarjetas de producto */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Efecto de hover en las tarjetas */
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos para la imagen de las tarjetas */
+  .card img {
+    transition: transform 0.5s ease;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Efecto de zoom en la imagen cuando se pasa el ratón */
+  .card:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Animación para el contenido de la tarjeta */
+  .card-body {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Mostrar contenido de la tarjeta al pasar el ratón */
+  .card:hover .card-body {
+    opacity: 1;
+  }
+  
+  /* Estilos para la lista de ingredientes */
+  .list-group-item {
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efecto de hover en los elementos de la lista */
+  .list-group-item:hover {
+    background-color: #e9ecef;
+  }
+  
+  /* Estilos para el enlace "Ver Más" */
+  .card-link {
+    color: #ff8800;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .card-link:hover {
+    color: #ff8800;
+  }
+
+/* Define la animación de deslizamiento y desvanecimiento */
+@keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Aplica la animación a los productos */
+  .animate__slideInUp {
+    animation: slideInUp 1s ease-out;
+  }
+  
+
+/* Estado inicial para que las tarjetas se desvanezcan */
+.fade-out {
+    opacity: 0;
+    transform: translateY(20px); /* Pequeño desplazamiento inicial */
+}
+
+/* Animación de aparición */
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Animación de escala al pasar el cursor */
+.hover-scale {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
